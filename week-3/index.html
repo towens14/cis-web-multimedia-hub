@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Week 3 Pacman Dual Rendering</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Pacman Dual Rendering</h1>
+      <p>Use the arrow keys to move Pacman.</p>
+    </header>
+
+    <main class="dual-workspace">
+      <section class="workspace-panel">
+        <h2>HTML5 Canvas</h2>
+
+        <canvas
+          id="pacman-canvas"
+          width="500"
+          height="320"
+          aria-label="Pacman canvas workspace"
+        ></canvas>
+
+        <p id="coordinates">Pacman Position — X: 60, Y: 160</p>
+      </section>
+
+      <section class="workspace-panel">
+        <h2>melonJS Workspace</h2>
+        <div id="screen"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
